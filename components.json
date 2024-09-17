@@ -19,6 +19,7 @@
     "pages": "@/pages",
     "routes": "@/routes",
     "services": "@/services",
-    "features": "@/features"
+    "features": "@/features",
+    "constants": "@/constants"
   }
 }

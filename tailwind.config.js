@@ -31,6 +31,9 @@ export default {
           DEFAULT: "#9D57FF",
           hover: "#6825C7",
         },
+        purple:{
+          DEFAULT:"#7533D0"
+        },
         gray: {
           light: "#fafafa",
           low: "#F2F2F2",
@@ -46,7 +49,8 @@ export default {
           dark:"#000000",
           DEFAULT: "#151515",
           fill: "#242424",
-          light:"#222222"
+          light:"#222222",
+          bold:"#030303"
         },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -90,9 +94,11 @@ export default {
         },
       },
       borderRadius: {
-        lg: "var(--radius)",
+        lg: "10px",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        15:"15px",
+        20:"20px"
       },
     },
   },
