@@ -8,7 +8,7 @@ function Layout({ children }) {
       <Header />
       <div className="flex gap-x-5 mt-5">
         <Sidebar />
-        <main className="flex-1 bg-gray-light min-h-screen">{children}</main>
+        <main className="flex-1 rounded-20 bg-gray-light min-h-screen">{children}</main>
       </div>
     </div>
   );

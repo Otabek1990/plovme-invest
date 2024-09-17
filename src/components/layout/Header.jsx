@@ -7,7 +7,7 @@ import { Button } from "../ui/button";
 
 function Header() {
   return (
-    <header className="w-full rounded-[20px] p-5 flex items-center justify-between bg-white">
+    <header className="w-full rounded-20 p-5 flex items-center justify-between bg-white">
       <div className="flex gap-x-[25px] items-center">
         <h1 className="text-black-dark text-[35px] ml-5 font-light">
           plovme.<span className="font-medium">invest</span>
@@ -28,10 +28,10 @@ function Header() {
           <h2 className="text-black-dark font-medium text-xl">Прямой эфир</h2>
         </div>
         <div className="flex items-center gap-x-2.5">
-          <Button className="bg-gray-light rounded-[15px] h-[60px] w-[60px] shadow-none">
+          <Button className="bg-gray-light rounded-15 h-[60px] w-[60px] shadow-none">
             <img src={blockIcon} alt="block icon" />
           </Button>
-          <Button className="bg-gray-light rounded-[15px] h-[60px] shadow-none w-[60px]">
+          <Button className="bg-gray-light rounded-15 h-[60px] shadow-none w-[60px]">
             <img src={messageIcon} alt="message icon" />
           </Button>
         </div>
@@ -43,7 +43,7 @@ function Header() {
           <img src={ruFlag} alt="russian flag" />
           <span className="font-medium text-base text-black-light">RU</span>
         </Button>
-        <Button className="bg-gray-light rounded-[15px] h-[60px] shadow-none w-[60px]">
+        <Button className="bg-gray-light rounded-15 h-[60px] shadow-none w-[60px]">
           <img src={messageIcon} alt="message icon" />
         </Button>
       </div>
