@@ -14,10 +14,12 @@ export default {
       colors: {
         white: {
           DEFAULT: "#FFFFFF",
+          border:"#F6F6F6"
         },
         orange: {
           default: "#FFAB49",
           hover: "#FF8A00",
+          300:"#FFF3E5"
         },
         red: {
           default: "#FF2820",
@@ -41,8 +43,10 @@ export default {
           DEFAULT: "#159600",
         },
         black: {
+          dark:"#000000",
           DEFAULT: "#151515",
           fill: "#242424",
+          light:"#222222"
         },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

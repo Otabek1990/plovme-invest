@@ -2,7 +2,9 @@ import React from 'react'
 
 function AddressDetail() {
   return (
-    <div></div>
+    <div>
+      <h1>addddd</h1>
+    </div>
   )
 }
 
