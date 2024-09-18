@@ -41,9 +41,12 @@ export default {
           dark: "#303030",
           tabs: "#E0E2E7",
           border: "#404040",
+           filter:"#667085"
         },
         green: {
           DEFAULT: "#159600",
+          light:"#C4C4C4"
+         
         },
         black: {
           dark:"#000000",
