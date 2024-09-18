@@ -9,7 +9,8 @@ import plov from "@assets/images/plov.png";
 import vid1 from "@assets/images/vid1.png";
 import vid2 from "@assets/images/vid2.png";
 import vid3 from "@assets/images/vid3.png";
-import { Link } from "react-router-dom";
+import AdsTop from "@assets/images/adsCircleTop.svg";
+import AdsBottom from "@assets/images/adsCircleBottom.svg";
 
 function AddressDetail() {
   return (
@@ -25,7 +26,14 @@ function AddressDetail() {
           Точка в Юнус Абадском районе
         </h1>
         <div className="h-fit w-full relative">
-          <button className="h-[52px] w-[52px] rounded-full bg-white flex items-center absolute top-1/2 left-1/2 translate-1/2 tran">
+          <button
+            style={{
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%,-50%)",
+            }}
+            className="h-[52px] w-[52px] rounded-full bg-white flex items-center absolute"
+          >
             <img src={playIcon} alt="play icon" />
           </button>
           <img src={videoRasm} className="w-full" alt="video" />
@@ -110,14 +118,35 @@ function AddressDetail() {
           </li>
         </ul>
       </section>
-      <section className="my-[90px] mb-[100px] pl-[90px] pr-[120px] w-full">
-        <div className=" my-[90px] mb-[100px] pl-[90px] pr-[120px] w-full h-[346px] relative bg-purple-medium rounded-20 p-[45px]">
-          <div className="flex flex-col h-full justify-between items-start gap-[15px] text-white">
+      <section className="my-[90px] mb-[100px] pl-[90px]  pr-[120px] w-full">
+        <div
+          style={{
+            background: "linear-gradient(180deg, #6941D7 0%, #4F3595 100%)",
+            borderRadius: "20px",
+          }}
+          className=" my-[90px]   mb-[100px]  pr-[120px] w-full h-[346px] relative rounded-20 p-[45px]"
+        >
+          <img
+            className="absolute rounded-20 top-0 left-0"
+            src={AdsTop}
+            alt="ads top circle"
+          />
+          <img
+            className="absolute rounded-20 bottom-0 left-0"
+            src={AdsBottom}
+            alt="ads bottom circle"
+          />
+          <img
+            className="absolute right-[-50px] rounded-r-20  top-0 object-cover"
+            src={plov}
+            alt="plov"
+          />
+          <div className="flex flex-col h-full  relative z-30 justify-between items-start gap-[15px] text-white">
             <div>
               <h1 className="text-[45px] font-bold leading-[110%]">
                 Современная скорость, <br /> вечные традиции
               </h1>
-              <p className="text-base font-medium text-white">
+              <p className="text-base mt-[15px] font-medium text-white">
                 Ваш путь к качественной доставке
               </p>
             </div>
@@ -125,11 +154,6 @@ function AddressDetail() {
               Стать инвестором
             </Button>
           </div>
-          <img
-            className="absolute right-[-50px] rounded-r-20  top-0 object-cover"
-            src={plov}
-            alt="plov"
-          />
         </div>
       </section>
       <section className="my-[90px] mb-[100px] pl-[90px] pr-[120px] flex flex-col items-start gap-y-5">
@@ -213,19 +237,40 @@ function AddressDetail() {
       <section className="mt-[90px]   pl-[90px] pr-5">
         <div className="grid grid-cols-3 gap-5 ">
           <div className="h-fit w-full relative">
-            <button className="h-[52px] w-[52px] rounded-full bg-white flex items-center absolute top-1/2 left-1/2 translate-1/2 tran">
+            <button
+              style={{
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%,-50%)",
+              }}
+              className="h-[52px] w-[52px] rounded-full bg-white flex items-center absolute"
+            >
               <img src={playIcon} alt="play icon" />
             </button>
             <img src={vid1} className="w-full h-[570px] " alt="video" />
           </div>
           <div className="h-fit w-full relative">
-            <button className="h-[52px] w-[52px] rounded-full bg-white flex items-center absolute top-1/2 left-1/2 translate-1/2 tran">
+            <button
+              style={{
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%,-50%)",
+              }}
+              className="h-[52px] w-[52px] rounded-full bg-white flex items-center absolute"
+            >
               <img src={playIcon} alt="play icon" />
             </button>
             <img src={vid2} className="w-full h-[570px]" alt="video" />
           </div>
           <div className="h-fit w-full relative">
-            <button className="h-[52px] w-[52px] rounded-full bg-white flex items-center absolute top-1/2 left-1/2 translate-1/2 tran">
+            <button
+              style={{
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%,-50%)",
+              }}
+              className="h-[52px] w-[52px] rounded-full bg-white flex items-center absolute"
+            >
               <img src={playIcon} alt="play icon" />
             </button>
             <img src={vid3} className="w-full h-[570px]" alt="video" />
