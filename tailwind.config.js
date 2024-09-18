@@ -15,7 +15,8 @@ export default {
         white: {
           DEFAULT: "#FFFFFF",
           border:"#F6F6F6",
-          aqua:"#F1F1F1"
+          aqua:"#F1F1F1",
+
         },
         orange: {
           default: "#FFAB49",
@@ -24,6 +25,7 @@ export default {
         },
         red: {
           default: "#FF2820",
+          thin:"#FEEDEC"
         },
         yellow: {
           DEFAULT: "#FFD600",

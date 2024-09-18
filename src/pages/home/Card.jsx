@@ -1,6 +1,7 @@
 import React from "react";
 import RangeOfInvest from "./RangeOfInvest";
 import { Button } from "@components/ui/button";
+import { homeCardStatusses } from "@constants/homeCardStatusses";
 
 function Card({
   image,
@@ -12,8 +13,16 @@ function Card({
   status,
   id,
 }) {
+  const bgColor = homeCardStatusses[status].bgColor;
+  const color = homeCardStatusses[status].color;
   return (
-    <section className="w-full pb-[30px] bg-white  rounded-20 shadow-sm">
+    <section className="w-full relative pb-[30px] bg-white  rounded-20 shadow-sm">
+      <div
+        style={{ backgroundColor: bgColor, color: color,top:status==="ended" ? "52.2px":"14.5px" }}
+        className={`py-1 px-[14.5px] w-fit flex items-center justify-center rounded-full absolute h-[33.5px]  left-[14.5px]  text-sm font-medium`}
+      >
+        {homeCardStatusses[status].titleRu}
+      </div>
       <img
         className="h-56 object-cover rounded-20 w-full"
         src={image}
