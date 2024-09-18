@@ -35,7 +35,8 @@ export default {
           hover: "#6825C7",
         },
         purple:{
-          DEFAULT:"#7533D0"
+          DEFAULT:"#7533D0",
+          medium:"#5A3BB0"
         },
         gray: {
           thin:"#F5F5F5",
