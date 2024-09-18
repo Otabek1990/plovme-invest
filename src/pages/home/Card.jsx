@@ -2,6 +2,8 @@ import React from "react";
 import RangeOfInvest from "./RangeOfInvest";
 import { Button } from "@components/ui/button";
 import { homeCardStatusses } from "@constants/homeCardStatusses";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
 function Card({
   image,
@@ -13,8 +15,12 @@ function Card({
   status,
   id,
 }) {
+  const navigate=useNavigate()
   const bgColor = homeCardStatusses[status].bgColor;
   const color = homeCardStatusses[status].color;
+  const gotoDetailPage=()=>{
+   navigate(`/address-detail/${id}`)
+  }
   return (
     <section className="w-full relative pb-[30px] bg-white  rounded-20 shadow-sm">
       <div
@@ -54,7 +60,9 @@ function Card({
         <Button className="text-base mt-5 mb-[15px] bg-violet-hover shadow-none rounded-lg h-12 px-[18px] py-3 w-full flex items-center justify-center font-medium tracking-[0.08px] text-white leading-[23.771px]">
           Инвестировать
         </Button>
-        <Button className="text-sm  bg-transparent shadow-none rounded-lg px-[18px] py-3 w-full flex items-center justify-center font-medium tracking-[0.07px] text-green-dark">
+        <Button 
+        onClick={gotoDetailPage}
+        className="text-sm  bg-transparent shadow-none rounded-lg px-[18px] py-3 w-full flex items-center justify-center font-medium tracking-[0.07px] text-green-dark">
           Узнать больше
         </Button>
       </div>

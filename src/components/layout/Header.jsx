@@ -3,21 +3,23 @@ import blockIcon from "@assets/icons/block.svg";
 import messageIcon from "@assets/icons/message.svg";
 import ruFlag from "@assets/icons/ruFlag.svg";
 import avatar from "@assets/images/avatar.svg";
+import menu from "@assets/icons/menu.svg";
 import { Button } from "../ui/button";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header className="w-full rounded-20 p-5 flex items-center justify-between bg-white">
       <div className="flex gap-x-[25px] items-center">
-        <h1 className="text-black-dark text-[35px] ml-5 font-light">
+        <Link to={"/"} className="text-black-dark text-[35px] ml-5 font-light">
           plovme.<span className="font-medium">invest</span>
-        </h1>
+        </Link>
         <div className=" flex h-[60px] items-center ps-6 gap-2.5 border-white-border border-s-2">
           <h2 className="text-black-dark font-medium text-xl">Баланс</h2>
           <span className="text-orange-hover text-[22px] font-bold">
             100 831 сум
           </span>
-          <Button className="bg-orange-300 text-violet-hover underline text-xs font-medium ml-2 w-[147px] px-[42px] shadow-none py-3">
+          <Button className="bg-transparent border border-orange-hover text-orange-hover  text-xs font-medium ml-2 h-[42px] w-[147px] px-[42px] hover:bg-orange-hover hover:text-white duration-200 shadow-none py-3">
             пополнить
           </Button>
         </div>
@@ -44,7 +46,7 @@ function Header() {
           <span className="font-medium text-base text-black-light">RU</span>
         </Button>
         <Button className="bg-gray-light rounded-15 h-[60px] shadow-none w-[60px]">
-          <img src={messageIcon} alt="message icon" />
+          <img src={menu} alt="menu" />
         </Button>
       </div>
     </header>
