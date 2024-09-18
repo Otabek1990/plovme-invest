@@ -11,15 +11,15 @@
     "prefix": ""
   },
   "aliases": {
-    "components": "@/components",
-    "utils": "@/lib/utils",
-    "ui": "@/components/ui",
-    "lib": "@/lib",
-    "hooks": "@/hooks",
-    "pages": "@/pages",
-    "routes": "@/routes",
-    "services": "@/services",
-    "features": "@/features",
-    "constants": "@/constants"
+    "components": "@components",
+    "utils": "@lib/utils",
+    "ui": "@components/ui",
+    "lib": "@lib",
+    "hooks": "@hooks",
+    "pages": "@pages",
+    "routes": "@routes",
+    "services": "@services",
+    "features": "@features",
+    "constants": "@constants"
   }
 }

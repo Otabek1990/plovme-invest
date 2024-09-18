@@ -1,11 +1,11 @@
-import yunusobodCard from "@assets/images/yunusobodCard.png"
+import yunusobod from "@assets/images/firstCard.png"
 import almazarCard from "@assets/images/almazarCard.png"
 import hamzaCard from "@assets/images/hamzaCard.png"
 import sergeliCard from "@assets/images/sergeliCard.png"
 import bektemirCard from "@assets/images/bektemirCard.png"
 export const homeAddressCardDatas=[
     {
-       image:yunusobodCard,
+       image:yunusobod,
        address:"Юнус Абадском районе",
        doxodnostPercent:90,
        srokViplata:3,
@@ -25,7 +25,7 @@ export const homeAddressCardDatas=[
        id:2,
     },
     {
-       image:sergeliCardCard,
+       image:sergeliCard,
        address:"Сергелийском районе",
        doxodnostPercent:90,
        srokViplata:3,

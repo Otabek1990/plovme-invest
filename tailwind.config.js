@@ -14,7 +14,8 @@ export default {
       colors: {
         white: {
           DEFAULT: "#FFFFFF",
-          border:"#F6F6F6"
+          border:"#F6F6F6",
+          aqua:"#F1F1F1"
         },
         orange: {
           default: "#FFAB49",
@@ -35,25 +36,32 @@ export default {
           DEFAULT:"#7533D0"
         },
         gray: {
+          thin:"#F5F5F5",
           light: "#fafafa",
           low: "#F2F2F2",
           hard: "#858D9D",
           dark: "#303030",
           tabs: "#E0E2E7",
           border: "#404040",
-           filter:"#667085"
+           filter:"#667085",
+           normal:"#8C8C8C"
         },
         green: {
           DEFAULT: "#159600",
-          light:"#C4C4C4"
+          light:"#C4C4C4",
+          bold:"#5A5A5A",
+          dark:"#1A1A1A"
          
         },
         black: {
           dark:"#000000",
           DEFAULT: "#151515",
+          md: "#161515",
           fill: "#242424",
           light:"#222222",
-          bold:"#030303"
+          bold:"#030303",
+          normal:"#020202",
+          medium:"#0C0C0C"
         },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

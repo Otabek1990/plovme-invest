@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar";
 
 function Layout({ children }) {
   return (
-    <div className=" px-16 py-5 min-h-screen bg-gray-low">
+    <div className="w-full max-w-[1728px] mx-auto px-16 py-5 min-h-screen ">
       <Header />
       <div className="flex gap-x-5 mt-5">
         <Sidebar />
